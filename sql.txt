@@ -1,0 +1,17 @@
+﻿Run this ->create database Drone
+
+
+Run this->CREATE TABLE [dbo].[Customer](
+	[CustId] [int] IDENTITY(1,1) NOT NULL,
+	[CustName] [varchar](20) NULL,
+	[Sex] [char](1) NULL,
+	[username] [varchar](20) NULL,
+	[password] [varchar](20) NULL)
+
+
+Run This->CREATE TABLE [dbo].[DroneProfile](
+	[DroneID] [int] IDENTITY(1,1) NOT NULL,
+	[DroneName] [varchar](20) NULL,
+	[DroneCost] [int] NOT NULL,
+	[DroneModelNumber] [varchar](1) NOT NULL)
+
