@@ -20,7 +20,7 @@ namespace Drone_Management_Sys.Controllers
             return View(db.Customers.ToList());
         }
 
-        // GET: Customers/Details/5
+        // GET: Customers/Details/5Comment
         public ActionResult Details(int? CustId)
         {
             if (CustId == null)
