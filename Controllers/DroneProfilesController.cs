@@ -14,7 +14,7 @@ namespace Drone_Management_Sys.Controllers
     {
         private DroneEntities db = new DroneEntities();
 
-        // GET: DroneProfiles
+        // GET: DroneProfiles Comment added
         public ActionResult Index()
         {
             return View(db.DroneProfiles.ToList());
