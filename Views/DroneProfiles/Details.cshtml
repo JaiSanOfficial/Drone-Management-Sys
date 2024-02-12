@@ -1,0 +1,42 @@
+﻿@model Drone_Management_Sys.Models.DroneProfile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DroneProfile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DroneName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DroneName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DroneCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DroneCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DroneModelNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DroneModelNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DroneID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

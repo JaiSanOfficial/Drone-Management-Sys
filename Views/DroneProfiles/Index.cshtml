@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Drone_Management_Sys.Models.DroneProfile>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DroneName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DroneCost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DroneModelNumber)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DroneName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DroneCost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DroneModelNumber)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DroneID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DroneID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DroneID })
+        </td>
+    </tr>
+}
+
+</table>

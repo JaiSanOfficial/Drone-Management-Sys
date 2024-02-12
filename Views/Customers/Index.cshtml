@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Drone_Management_Sys.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Confirmation</h2>
+@if(ViewBag.result != null)
+            {
+    <p>@ViewBag.result</p>
+            }
+<p>
+    @Html.ActionLink("Click here to go back to dashboard", "Index", "Home")
+</p>
+

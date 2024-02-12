@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron">
+    <h2 class="text-center">Welcome to Drone Management System</h2>
+
+    <marquee>
+        <img width="400" height="300" class="" src="~/Content/Images/droneMarquee.jpg" />
+    </marquee>
+    <div class="text-center">
+
+        <p class="btn btn-primary btn-lg">@Html.ActionLink("Register as a new customer", "Create", "Customers", new { area = "" }, new { style = "color:white" })</p>
+        <p class="btn btn-success btn-lg">@Html.ActionLink("Login To Drone DashBoard", "Login", "Login", new { area = "" }, new { style = "color:white" })</p>
+    </div>
+</div>

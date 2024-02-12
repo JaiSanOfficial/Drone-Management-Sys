@@ -1,0 +1,12 @@
+﻿@model Drone_Management_Sys.Models.Customer
+
+@{
+    ViewBag.Title = "UserDashBoard";
+}
+
+<h2>UserDashBoard</h2>
+@if(Session["username"] != null)
+            {
+                <p>Welcome @Session["username"].ToString()</p>
+            }
+
